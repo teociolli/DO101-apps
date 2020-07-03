@@ -16,14 +16,14 @@ block content
                 th ID
                 th First Name
                 th Last Name
-                //th EMail
+                th EMail
             tbody
               for contact in contacts
                 tr
                   td= contact.id
                   td= contact.firstname
                   td= contact.lastname
-                  //td= contact.email
+                  td= contact.email
           else
             form(action="/seed", method="POST")
                 button(type="submit").btn.btn-primary Seed Data
